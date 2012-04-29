@@ -1,0 +1,91 @@
+<link href="styling.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="waterscript.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+
+<html>
+<body onLoad="disableSubmit();">
+<div id="wrapper">
+<div id="top">
+<h1>Watermark your picture!</h1>
+</div>
+<div id="middle">
+<p id="preview">Preview</p>
+<div id="prepic">
+<div id="userpic"></div>
+<p id="maintext">Watermark</p>
+</div>
+
+<form action="savelink.php" method="get" id="mainform">
+<h2>Pic url </h2><input type="text" id="inputurl" name="inputurlphp" size="50" onchange="getPic();"/><span id="warningpic"></span>
+<h2>Watermark text </h2><input type="text" id="inputwater" size="50" onkeyup="changeText();" onkeydown="changeText();"/>
+<h2>Select font </h2> 
+<table id="radioTable">
+<tr>
+<td><input type="radio" name="font1" onclick="changeFont(0);"/></td>
+<td><p class="fontGeorgia">Georgia</p></td>
+
+<td><input type="radio" name="font1"/ onclick="changeFont(1);"></td>
+<td><p class="fontImpact">Impact</p></td>
+
+<td><input type="radio" name="font1"/ onclick="changeFont(2);"></td>
+<td><p class="fontArial">Arial</p></td>
+
+<td><input type="radio" name="font1"/ onclick="changeFont(3);"></td>
+<td><p class="fontMono">David</p></td>
+</tr>
+<tr>
+<td><input type="radio" name="font1"/ onclick="changeFont(4);"></td>
+<td><p class="fontCalibri">Calibri</p></td>
+
+<td><input type="radio" name="font1"/ onclick="changeFont(5);"></td>
+<td><p class="fontStencil">Tahoma</p></td>
+
+<td><input type="radio" name="font1"/ onclick="changeFont(6);"></td>
+<td><p class="fontRoman">Times New Roman</p></td>
+
+<td><input type="radio" name="font1"/ onclick="changeFont(7);"></td>
+<td><p class="fontComic">Comic Sans MS</p></td>
+</tr>
+</table>
+
+<h2>Select Color </h2> 
+</br>
+<table cellpadding="10">
+<tr>
+<td>
+<div id="colorbar1"><div id="bar1" onmouseout="setMouseFalse();" onmousedown="setMouseTrue();" onclick="setMouseFalse();" onmouseup="setMouseFalse();" onmousemove="colorBrowseRed();"></div></div></td><td><p id="redp">Red 0</p></td>
+</tr>
+<tr>
+<td>
+<div id="colorbar2"><div id="bar2" onmouseout="setMouseFalse();" onmousedown="setMouseTrue();" onclick="setMouseFalse();" onmouseup="setMouseFalse();" onmousemove="colorBrowseGreen();"></div></div></td><td><p id="greenp">Green 0</p></td>
+</tr>
+<tr>
+<td>
+<div id="colorbar3"><div id="bar3" onmouseout="setMouseFalse();" onmousedown="setMouseTrue();" onclick="setMouseFalse();" onmouseup="setMouseFalse();" onmousemove="colorBrowseBlue();"></div></div></td><td><p id="bluep">Blue 0</p></td>
+</tr>
+</table>
+<div id='sqlpre'></div>
+
+</br>
+<h2>Shadow  <input type="checkbox" id="checkshadow" onchange="radioCheck();"/>&emsp; Text Size <input type="text" id="inputSize" size="5" onchange="fontSize();"/> </h2>
+
+
+<input class="submitbutton" type="submit" value="Submit" id="submitid" onmouseover="getValues();"/></br>
+<div id="valuefields">
+<input type="text" id="valuefield1" name="pvalue1"/></br>
+<input type="text" id="valuefield2" name="pvalue2"/></br>
+<input type="text" id="valuefield3" name="pvalue3"/></br>
+<input type="text" id="valuefield4" name="pvalue4"/></br>
+<input type="text" id="valuefield5" name="pvalue5"/></br>
+<input type="text" id="valuefield6" name="pvalue6"/></br>
+<input type="text" id="valuefield7" name="pvalue7"/></br>
+</div>
+<div id="bottom">
+<p>©Taneli Kärkkäinen</br> <a href="mailto:hypelortti@gmail.com">hypelortti@gmail.com</a></br><a href="http://teekoo86.blogspot.com/">http://teekoo86.blogspot.com/</a><p>
+</div>
+</form>
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+
+body{
+background-color: rgb(33,41,48);
+}
+
+h1{
+font-size: 50;
+text-shadow: 2px 2px 2px #888;
+}
+
+#bottom{
+font-size: 10;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+border: solid gray 1px;
+width: 180;
+border-radius: 5;
+}
+
+#top{
+text-align: center;
+/*
+background-color: gray;
+opacity: 0.2;
+height: 20%;
+top: 10%;
+width: 100%;
+left: 0px;
+border: solid black 1px;
+position: absolute;
+*/
+}
+
+#sqlpre{
+position: absolute;
+width: 400;
+height: 400;
+right: 100;
+}
+
+#middle{
+font-family: Georgia;
+color: RGB(68,68,68);
+padding-left:20px;
+//margin-left: 25%;
+//margin-right: 10%;
+position: relative;
+white-space: normal;
+word-wrap: break-word; 
+}
+
+
+#prepic{
+width: 400;
+height: 400;
+position: absolute;
+top: 40;
+right: 100;
+border: solid black 1px;
+text-align: center;
+}
+
+#userpic{
+width: 400;
+height: 400;
+top: 0;
+position: absolute;
+}
+
+#preview{
+position: absolute;
+right: 280;
+}
+
+#maintext{
+position: relative;
+margin-top: 50%;
+margin-bottom: 50%;
+}
+
+#wrapper{
+background-color: white;
+padding: 2;
+border-radius: 15px;
+box-shadow: 10px 10px 5px #888;
+width: 1100;
+margin-left: auto ;
+margin-right: auto ;
+}
+
+#colorbar1{
+width: 255;
+height: 22;
+background-color: black;
+}
+#colorbar2{
+width: 255;
+height: 22;
+background-color: black;
+}
+#colorbar3{
+width: 255;
+height: 22;
+background-color: black;
+}
+
+#bar1{
+position: absolute;
+background-color: red;
+width: 20;
+height: 20;
+border: solid black 1px;
+}
+
+#bar2{
+position: absolute;
+background-color: green;
+width: 20;
+height: 20;
+border: solid black 1px;
+}
+
+#bar3{
+position: absolute;
+background-color: blue;
+width: 20;
+height: 20;
+border: solid black 1px;
+}
+
+#warningpic{
+color: red;
+}
+
+#valuefields{
+visibility: hidden;
+}
+.fontArial{
+font-family: Arial;
+}
+
+.fontGeorgia{
+font-family: Georgia;
+}
+
+.fontImpact{
+font-family: Impact;
+}
+
+.fontMono{
+font-family: David;
+}
+
+.fontCalibri{
+font-family: Calibri;
+}
+
+.fontComic{
+font-family: Comic Sans MS;
+}
+
+.fontRoman{
+font-family: Times New Roman;
+}
+
+.fontStencil{
+font-family: Tahoma;
+}
+
+.submitbutton {
+margin-left: 12%;
+margin-top: 5%;
+	box-shadow:inset -2px 0px 0px -2px #caefab;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+	background:-moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+	background-color:#77d42a;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	border-radius:9px;
+	border:1px solid #268a16;
+	display:inline-block;
+	color:#306108;
+	font-family:arial;
+	font-size:40px;
+	font-weight:bold;
+	padding:14px 57px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #aade7c;
+	box-shadow: 0px 4px 2px #888;
+}
+.submitbutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
+	background:-moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+	background-color:#5cb811;
+	cursor: pointer;
+}
+
+.submitbutton:active {
+	position:relative;
+	top:2px;
+}
+
+
